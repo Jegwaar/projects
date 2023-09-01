@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(42,51,62);
+    height: 100vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.container{
+    background-color: azure;
+    width: 500px;
+    padding: 20px 35px 40px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(148, 149, 161, 0.2);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.container h1{
+    margin-bottom: 10px;
+}
+.search-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.search-box input{
+    padding: 10px 20px;
+    width: 70%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    box-shadow: 0 15px 20px rgba(148, 149, 161, 0.4);
+    border-radius: 10px;
+}
+
+.search-box button{
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(255, 25, 25, .7);
+    box-shadow: 0 15px 20px rgba(148, 149, 161, 0.4);
+}
+.search-box button:hover{
+    transition: 0.8s;
+    /* color: white; */
+    background-color: rgba(54, 129, 179, 0.493);
+}
+.result {
+    position: relative;
+}
+.result h3{
+    font-size: 30px;
+    color: black;
+}
+.result .word{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.result button{
+    background-color: transparent;
+    color: #ae9cff;
+    border: none;
+    outline: none;
+    font-size: 10px;
+}
+
+.result .details{
+    display: flex;
+    gap: 10px;
+    color: #b3b6d4;
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+}
+
+.word-meaning{
+    color: #575a7b;
+}
+
+.word-example{
+    color: #575a7b;
+    font-style: italic;
+    border-left: 5pc solid #ae9cff;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+.error{
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 300;
+    background-color: rgba(255, 0, 0, 0.077);
+}
+
+.word i{
+    font-size: 20px;
+}
+.word i:hover{
+    cursor: pointer;
+}
+
+.word h3{
+    font-size: 50px;
+}
